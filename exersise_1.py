@@ -1,5 +1,9 @@
 # Создать функцию convert_to_int(value), которая пытается преобразовать строку в целое число. Обработать случаи,
 # когда преобразование невозможно, и когда возникает любое другое исключение.
+import sys
+import io
+#
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 #
 def convert_to_int(value):
     try:
